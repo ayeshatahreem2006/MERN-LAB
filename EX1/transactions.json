@@ -1,0 +1,20 @@
+[
+ {
+  "_id":1,
+  "name":"John Doe",
+  "amount":500,
+  "status":"Completed"
+ },
+ {
+  "_id":2,
+  "name":"Jane Smith",
+  "amount":750,
+  "status":"Pending"
+ },
+ {
+  "_id":3,
+  "name":"Alice Johnson",
+  "amount":200,
+  "status":"Completed"
+ }
+]

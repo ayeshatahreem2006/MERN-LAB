@@ -1,0 +1,62 @@
+A. CREATE Operation
+
+const fs = require("fs");
+
+fs.writeFileSync(
+    "apple.txt",
+    "this is a simple file"
+);
+
+console.log("File Created");
+
+node index.js
+
+B. READ Operation
+const fs = require("fs");
+
+fs.readFile(
+    "apple.txt",
+    "utf8",
+    (err, data) => {
+        console.log(data);
+    }
+);
+
+node index.js
+
+C. UPDATE Operation
+const fs = require("fs");
+
+fs.appendFile(
+    "apple.txt",
+    " for fruits",
+    (err) => {
+        console.log("File Updated");
+    }
+);
+
+node index.js
+
+D. RENAME Operation
+
+const fs = require("fs");
+
+fs.rename(
+    "apple.txt",
+    "fruit.txt",
+    (err) => {
+        console.log("File Renamed");
+    }
+);
+
+node index.js
+
+E. DELETE Operation
+
+const fs = require("fs");
+
+fs.unlinkSync("fruit.txt");
+
+console.log("File Deleted");
+
+node index.js

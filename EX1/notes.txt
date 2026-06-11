@@ -1,0 +1,11 @@
+BASH
+npm init -y
+npm install mongodb
+node mongo_script.js
+mongosh
+use user_managed
+
+TERMINAL
+show collections
+db.transactions.find()
+db.transactions.countDocuments()
