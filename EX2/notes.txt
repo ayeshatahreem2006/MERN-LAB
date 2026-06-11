@@ -1,0 +1,13 @@
+BASH
+
+npm init -y
+npm install mongodb
+node query.js
+mongosh
+use user_managed
+
+TERMINAL
+db.transactions.find().pretty()
+db.transactions.find({Name:"Somu"}).pretty()
+db.transactions.find({"Payment.Total":600}).pretty()
+db.transactions.countDocuments()
